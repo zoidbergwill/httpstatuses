@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: 14.x
     - run: npm install
-    - run: node build.js
+    - run: node build.js without-preview
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
