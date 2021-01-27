@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>226 IM Used &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 226: The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>2&times;&times; Success</h2>
+      <h1><span>226</span> IM Used</h1><p>The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.</p>
+<p>The actual current instance might not be available except by combining this response with other previous or future responses, as appropriate for the specific instance-manipulation(s). If so, the headers of the resulting instance are the result of combining the headers from the 226 response and the other instances, following the rules in <a href="http://tools.ietf.org/html/rfc2616#section-13.5.3">section 13.5.3</a> of the HTTP/1.1 specification.</p>
+<p>The request MUST have included an A-IM header field listing at least one instance-manipulation. The response MUST include an Etag header field giving the entity tag of the current instance.</p>
+<p>A response received with a status code of 226 MAY be stored by a cache and used in reply to a subsequent request, subject to the HTTP expiration mechanism and any Cache-Control headers, and to the requirements in <a href="http://tools.ietf.org/html/rfc3229#section-10.6">section 10.6</a>.</p>
+<p>A response received with a status code of 226 MAY be used by a cache, in conjunction with a cache entry for the base instance, to create a cache entry for the current instance.</p>
+<hr>
+<ul>
+<li>Source: <a href="http://tools.ietf.org/html/rfc3229#section-10.4.1">RFC3229 Section 10.4.1</a></li>
+</ul>
+
+      <h1 class="section"><span>226</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:im_used</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_IM_USED</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

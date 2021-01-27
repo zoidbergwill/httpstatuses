@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>410 Gone &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 410: The target resource is no longer available at the origin server and that this condition is likely to be permanent.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>4&times;&times; Client Error</h2>
+      <h1><span>410</span> Gone</h1><p>The target resource is no longer available at the origin server and that this condition is likely to be permanent.</p>
+<p>If the origin server does not know, or has no facility to determine, whether or not the condition is permanent, the status code <a href="/404">404 Not Found</a> ought to be used instead.</p>
+<p>The 410 response is primarily intended to assist the task of web maintenance by notifying the recipient that the resource is intentionally unavailable and that the server owners desire that remote links to that resource be removed. Such an event is common for limited-time, promotional services and for resources belonging to individuals no longer associated with the origin server&#39;s site. It is not necessary to mark all permanently unavailable resources as &quot;gone&quot; or to keep the mark for any length of time -- that is left to the discretion of the server owner.</p>
+<p>A 410 response is cacheable by default; i.e., unless otherwise indicated by the method definition or explicit cache controls<sup><a href="#ref-1">1</a></sup>.</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Calculating Heuristic Freshness
+<a href="http://tools.ietf.org/html/rfc7234#section-4.2.2">RFC7234 Section 4.2.2</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7231#section-6.5.9">RFC7231 Section 6.5.9</a></li>
+</ul>
+
+      <h1 class="section"><span>410</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:gone</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusGone</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_GONE</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.GONE</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.GONE</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.GONE</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

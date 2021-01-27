@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>302 Found &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 302: The target resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client ought to continue to use the effective request URI for future requests.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>3&times;&times; Redirection</h2>
+      <h1><span>302</span> Found</h1><p>The target resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client ought to continue to use the effective request URI for future requests.</p>
+<p>The server SHOULD generate a Location header field in the response containing a URI reference for the different URI. The user agent MAY use the Location field value for automatic redirection. The server&#39;s response payload usually contains a short hypertext note with a hyperlink to the different URI(s).</p>
+<p>Note: For historical reasons, a user agent MAY change the request method from POST to GET for the subsequent request. If this behavior is undesired, the <a href="/307">307 Temporary Redirect</a> status code can be used instead.</p>
+<hr>
+<ul>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7231#section-6.4.3">RFC7231 Section 6.4.3</a></li>
+</ul>
+
+      <h1 class="section"><span>302</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:found</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusFound</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_FOUND</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.FOUND</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.FOUND</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.FOUND</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

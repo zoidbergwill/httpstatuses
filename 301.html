@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>301 Moved Permanently &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 301: The target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>3&times;&times; Redirection</h2>
+      <h1><span>301</span> Moved Permanently</h1><p>The target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs.</p>
+<p>Clients with link-editing capabilities ought to automatically re-link references to the effective request URI to one or more of the new references sent by the server, where possible.</p>
+<p>The server SHOULD generate a Location header field in the response containing a preferred URI reference for the new permanent URI. The user agent MAY use the Location field value for automatic redirection. The server&#39;s response payload usually contains a short hypertext note with a hyperlink to the new URI(s).</p>
+<p>Note: For historical reasons, a user agent MAY change the request method from POST to GET for the subsequent request. If this behavior is undesired, the <a href="/307">307 Temporary Redirect</a> status code can be used instead.</p>
+<p>A 301 response is cacheable by default; i.e., unless otherwise indicated by the method definition or explicit cache controls<sup><a href="#ref-1">1</a></sup>.</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Calculating Heuristic Freshness
+<a href="http://tools.ietf.org/html/rfc7234#section-4.2.2">RFC7234 Section 4.2.2</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7231#section-6.4.2">RFC7231 Section 6.4.2</a></li>
+</ul>
+
+      <h1 class="section"><span>301</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:moved_permanently</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusMovedPermanently</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_MOVED_PERMANENTLY</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.MOVED_PERMANENTLY</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.MOVED_PERMANENTLY</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.MOVED_PERMANENTLY</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

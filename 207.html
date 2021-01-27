@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>207 Multi-Status &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 207: A Multi-Status response conveys information about multiple resources in situations where multiple status codes might be appropriate.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>2&times;&times; Success</h2>
+      <h1><span>207</span> Multi-Status</h1><p>A Multi-Status response conveys information about multiple resources in situations where multiple status codes might be appropriate.</p>
+<p>The default Multi-Status response body is a text/xml or application/xml HTTP entity with a &#39;multistatus&#39; root element. Further elements contain 200, 300, 400, and 500 series status codes generated during the method invocation. 100 series status codes SHOULD NOT be recorded in a &#39;response&#39; XML element.</p>
+<p>Although &#39;207&#39; is used as the overall response status code, the recipient needs to consult the contents of the multistatus response body for further information about the success or failure of the method execution. The response MAY be used in success, partial success and also in failure situations.</p>
+<p>The &#39;multistatus&#39; root element holds zero or more &#39;response&#39; elements in any order, each with information about an individual resource. Each &#39;response&#39; element MUST have an &#39;href&#39; element to identify the resource.</p>
+<p>A Multi-Status response uses one out of two distinct formats for representing the status:</p>
+<p>1. A &#39;status&#39; element as child of the &#39;response&#39; element indicates the status of the message execution for the identified resource as a whole<sup><a href="#ref-1">1</a></sup>. Some method definitions provide information about specific status codes clients should be prepared to see in a response. However, clients MUST be able to handle other status codes, using the generic rules defined in <a href="http://tools.ietf.org/html/rfc2616#section-10">RFC2616 Section 10</a>.</p>
+<p>2. For PROPFIND and PROPPATCH, the format has been extended using the &#39;propstat&#39; element instead of &#39;status&#39;, providing information about individual properties of a resource.  This format is specific to PROPFIND and PROPPATCH, and is described in detail in <a href="http://tools.ietf.org/html/rfc4918#section-9.1">RFC4918 Section 9.1</a> and <a href="http://tools.ietf.org/html/rfc4918#section-9.2">RFC4918 Section 9.2</a>.</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Example - DELETE <a href="http://tools.ietf.org/html/rfc4918#section-9.6.2">RFC4918 Section 9.6.2</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc4918#section-13">RFC4918 Section 13</a></li>
+</ul>
+
+      <h1 class="section"><span>207</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:multi_status</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_MULTI_STATUS</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

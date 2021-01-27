@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>200 OK &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 200: The request has succeeded.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>2&times;&times; Success</h2>
+      <h1><span>200</span> OK</h1><p>The request has succeeded.</p>
+<p>The payload sent in a 200 response depends on the request method. For the methods defined by this specification, the intended meaning of the payload can be summarized as:</p>
+<ul>
+<li><code>GET</code> a representation of the target resource</li>
+<li><code>HEAD</code> the same representation as <code>GET</code>, but without the representation data</li>
+<li><code>POST</code> a representation of the status of, or results obtained from, the action;<ul>
+<li><code>PUT</code> <code>DELETE</code> a representation of the status of the action;</li>
+<li><code>OPTIONS</code> a representation of the communications options;</li>
+<li><code>TRACE</code> a representation of the request message as received by the end server.</li>
+</ul>
+</li>
+</ul>
+<p>Aside from responses to CONNECT, a 200 response always has a payload, though an origin server MAY generate a payload body of zero length. If no payload is desired, an origin server ought to send <a href="/204">204 No Content</a> instead.  For CONNECT, no payload is allowed because the successful result is a tunnel, which begins immediately after the 200 response header section.</p>
+<p>A 200 response is cacheable by default; i.e., unless otherwise indicated by the method definition or explicit cache controls<sup><a href="#ref-1">1</a></sup>.</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Calculating Heuristic Freshness
+<a href="http://tools.ietf.org/html/rfc7234#section-4.2.2">RFC7234 Section 4.2.2</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7231#section-6.3.1">RFC7231 Section 6.3.1</a></li>
+</ul>
+
+      <h1 class="section"><span>200</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:ok</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusOK</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_OK</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.OK</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.OK</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.OK</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

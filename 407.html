@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>407 Proxy Authentication Required &mdash; httpstatuses.com</title>
+    <link rel="shortcut icon" href="/favicon-2c8f09ecdff4f6b2ee66cc6a3c000019.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style-e9d18b2504b962e67dedc17a859dea0d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="HTTP Status Code 407: Similar to 401 Unauthorized, but it indicates that the client needs to authenticate itself in order to use a proxy.">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <p><a href="/">&larr; Return to httpstatuses.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="code container">
+      <h2>4&times;&times; Client Error</h2>
+      <h1><span>407</span> Proxy Authentication Required</h1><p>Similar to <a href="/401">401 Unauthorized</a>, but it indicates that the client needs to authenticate itself in order to use a proxy.</p>
+<p>The proxy MUST send a Proxy-Authenticate header field<sup><a href="#ref-1">1</a></sup> containing a challenge applicable to that proxy for the target resource. The client MAY repeat the request with a new or replaced Proxy-Authorization header field<sup><a href="#ref-2">2</a></sup>.</p>
+<hr>
+<ul>
+<li><span id="ref-1"><sup>1</sup> Proxy-Authenticate
+<a href="http://tools.ietf.org/html/rfc7235#section-4.3">RFC7235 Section 4.3</a></span></li>
+<li><span id="ref-2"><sup>2</sup> Proxy-Authorization
+<a href="http://tools.ietf.org/html/rfc7235#section-4.4">RFC7235 Section 4.4</a></span></li>
+<li>Source: <a href="http://tools.ietf.org/html/rfc7235#section-3.2">RFC7235 Section 3.2</a></li>
+</ul>
+
+      <h1 class="section"><span>407</span> Code References</h1>
+      <p>Rails HTTP Status Symbol <code>:proxy_authentication_required</code></p>
+      <p>Go HTTP Status Constant <code>http.StatusProxyAuthRequired</code></p>
+      <p>Symfony HTTP Status Constant <code>Response::HTTP_PROXY_AUTHENTICATION_REQUIRED</code></p>
+      <p>Python2 HTTP Status Constant <code>httplib.PROXY_AUTHENTICATION_REQUIRED</code></p>
+      <p>Python3+ HTTP Status Constant <code>http.client.PROXY_AUTHENTICATION_REQUIRED</code></p>
+      <p>Python3.5+ HTTP Status Constant <code>http.HTTPStatus.PROXY_AUTHENTICATION_REQUIRED</code></p><a href="/">&larr; Return to httpstatuses.com</a>
+    </article>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29439846-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
