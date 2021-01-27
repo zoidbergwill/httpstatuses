@@ -36,5 +36,8 @@
     "metalsmith-writemetadata": "^0.4.5",
     "serve-static": "^1.10.2",
     "skeleton-scss": "^2.0.4"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.0.0"
   }
 }

@@ -9,11 +9,8 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 14.x
@@ -22,9 +19,9 @@ jobs:
         node-version: 14.x
     - run: npm install
     - run: node build.js without-preview
+    - run: node yaml_to_json.js
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
-  
