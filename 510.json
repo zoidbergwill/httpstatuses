@@ -1,0 +1,15 @@
+{
+	"description": "The request has succeeded.\n\nThe payload sent in a 200 response depends on the request method. For the methods defined by this specification, the intended meaning of the payload can be summarized as:\n\n* `GET` a representation of the target resource\n* `HEAD` the same representation as `GET`, but without the representation data\n* `POST` a representation of the status of, or results obtained from, the action;\n    * `PUT` `DELETE` a representation of the status of the action;\n    * `OPTIONS` a representation of the communications options;\n    * `TRACE` a representation of the request message as received by the end server.\n\nAside from responses to CONNECT, a 200 response always has a payload, though an origin server MAY generate a payload body of zero length. If no payload is desired, an origin server ought to send [204 No Content](/204) instead.  For CONNECT, no payload is allowed because the successful result is a tunnel, which begins immediately after the 200 response header section.\n\nA 200 response is cacheable by default; i.e., unless otherwise indicated by the method definition or explicit cache controls<sup>[1](#ref-1)</sup>.",
+	"set": 2,
+	"code": 200,
+	"title": "OK",
+	"references": {
+		"Rails HTTP Status Symbol": ":ok",
+		"Go HTTP Status Constant": "http.StatusOK",
+		"Symfony HTTP Status Constant": "Response::HTTP_OK",
+		"Python2 HTTP Status Constant": "httplib.OK",
+		"Python3+ HTTP Status Constant": "http.client.OK",
+		"Python3.5+ HTTP Status Constant": "http.HTTPStatus.OK",
+		".NET HTTP Status Constant": "System.Net.HttpStatusCode.OK"
+	}
+}
